@@ -20,6 +20,7 @@ const server = http.createServer((req, res) => {
     // ステータスコード200 (成功) を設定してヘッダーを送信
     res.writeHead(200);
     // "こんにちは！" という文字列をレスポンスとして返します
+    res.write('7/2の授業を受けた');
     res.end('こんにちは！');
 
   // '/ask' パスへのアクセスの場合
